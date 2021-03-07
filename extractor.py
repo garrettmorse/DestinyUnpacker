@@ -428,7 +428,7 @@ if __name__ == '__main__':
     # definitely room for optimization beyond multithread/parallel (cython maybe?)
     t_pool = mp.Pool(mp.cpu_count()) # pool will automatically take all threads. adjust accordingly.
     version = '3_0_0_4'
-    my_d2_pkg_loc = 'C:/Steam/steamapps/common/Destiny 2/ packages' # change me!
+    my_d2_pkg_loc = 'C:/Steam/steamapps/common/Destiny 2/packages' # change me!
     my_bin_out_loc = 'C:/Users/morse/Desktop/d_tex/d2_output_'      # and me!
     unpack_all(my_d2_pkg_loc, f'{my_bin_out_loc + version}/', t_pool)
     # 1st param is location of your D2 steam install packages folder. 2nd param is where you want unpacked binaries to go.
